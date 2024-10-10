@@ -26,6 +26,21 @@ public class Contact {
     private String gitLinks;
 
 
+    public Contact(String lastName, String firstName, String pseudo, String gender, LocalDate birthDate, String mail,
+            String adress, String zipCode, String personalPhone, String professionalPhone, String gitLinks) {
+        this.lastName = lastName;
+        this.firstName = firstName;
+        this.pseudo = pseudo;
+        this.gender = gender;
+        this.birthDate = birthDate;
+        this.mail = mail;
+        this.adress = adress;
+        this.zipCode = zipCode;
+        this.personalPhone = personalPhone;
+        this.professionalPhone = professionalPhone;
+        this.gitLinks = gitLinks;
+    }
+
     public Contact(int id, String lastName, String firstName, String pseudo, String gender, LocalDate birthDate,
             String mail, String adress, String zipCode, String personalPhone, String professionalPhone,
             String gitLinks) {
@@ -42,6 +57,10 @@ public class Contact {
         this.personalPhone = personalPhone;
         this.professionalPhone = professionalPhone;
         this.gitLinks = gitLinks;
+    }
+
+    public Contact() {
+
     }
 
     public int getId() {
